@@ -15,7 +15,7 @@
     <title>Speech To Text</title>
   </head>
   <body class="bg-dark">
-    <div class="container pt-5">
+    <div class="container pt-4">
       <div class="row align-items-center text-center">
         <div class="col-md-4">
           <h1 class="text-light">Speech to Text</h1>
@@ -25,16 +25,18 @@
         </div>
       </div>
       <div class="mt-4" id="div_language">
-        <p class="lead text-light mt-4">Select Voice</p>
+        <p class="lead text-light">Select Language</p>
         <select class="form-select bg-secondary text-light" id="select_language" onchange="updateCountry()"></select>
         <select class="form-select bg-secondary text-light mt-2" id="select_dialect"></select>
       </div>
-      <p class="lead text-light mt-4">Select Voice</p>
-      <div class="p-3" style="border: 1px solid gray; height: 300px; border-radius: 8px; overflow-y: auto; line-height: 3rem;">
+      <p class="lead text-light mt-4">Transcript</p>
+      <div class="p-3" style="border: 1px solid gray; height: 245px; border-radius: 8px; overflow-y: auto; line-height: 3rem;">
         <span id="final" class="text-light fw-bold"></span>
         <span id="interim" class="text-secondary"></span>
       </div>
-      <div class="mt-4">
+
+      <!-- Control Buttons -->
+      <div class="mb-4">
         <button class="btn btn-success mt-3 me-3" id="start">Start</button>
         <button class="btn btn-danger mt-3 me-3" id="stop">Stop</button>
         <span id="status" class="lead mt-3 text-danger fw-bold" style="display: none; float: right;">Listenting ...</span>
